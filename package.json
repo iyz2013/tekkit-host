@@ -1,0 +1,42 @@
+{
+  "name": "tekkit-host",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Minecraft / Tekkit 2 server dashboard for macOS (and Windows).",
+  "type": "module",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c cyan,magenta \"tsx watch server/index.ts\" \"vite\"",
+    "start": "tsx server/index.ts",
+    "build": "vite build",
+    "preview": "npm run build && npm start"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "pidusage": "^3.0.2",
+    "tsx": "^4.20.6",
+    "unzipper": "^0.12.3",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.3",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.6.0",
+    "@types/pidusage": "^2.0.5",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@types/unzipper": "^0.10.11",
+    "@types/ws": "^8.18.1",
+    "@vitejs/plugin-react": "^5.0.3",
+    "concurrently": "^9.2.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.7"
+  }
+}

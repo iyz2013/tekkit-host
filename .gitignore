@@ -1,0 +1,11 @@
+node_modules/
+dist/
+data/instances/
+data/backups/
+data/runtime/
+data/downloads/
+data/config.json
+.DS_Store
+*.log
+.idea/
+.vscode/
